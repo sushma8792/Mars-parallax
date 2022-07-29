@@ -1,0 +1,84 @@
+.Signup{
+	margin-top: 250px;
+	z-index: 2;
+}
+
+body{
+	background-image: url("WhatsApp\ Image\ 2022-05-09\ at\ 11.42.33\ AM.jpeg");
+	filter: contrast(130%);
+	z-index: 0;
+	background-attachment: fixed;
+}
+
+.Signup__text {
+	text-align: center;
+	margin: 0 auto 25px;
+	font-family : 'Press Start 2P', serif;
+	color: #ffffff;
+	letter-spacing: 0.5px;
+	font-size: 14px;
+	line-height: 1.5em;
+	width: 90%;
+}
+
+.Signup__form {
+	display: flex;
+	justify-content: center;
+}
+	
+.png-img {
+	display: block;
+	margin-bottom: 0;
+	margin-top: 10%;
+	margin-left: 0;
+	margin-right: 80%;
+	position: relative;	
+	z-index: 1;
+}
+
+	
+input {
+	border: 2px solid #6d6d6d;
+	border-radius: 3px;
+	padding: 15px;
+	font-family: 'Press Start 2P', serif;
+	font-size: 10px;
+	margin-right: 10px;
+	color: #6d6d6d;
+	width: 90%;
+	max-width: 300px;
+	cursor: cell;
+	@media (max-width 540px)
+		display block
+		margin 0 auto 25px
+	&:focus
+		outline none
+		border 2px solid #DB4646
+		box-shadow inset 1px 1px 2px 0 #c9c9c9
+		
+}
+
+.Signup__button {
+	font-family: 'Press Start 2P', serif;
+	color: #fff;
+	background: rgb(99,23,10); 
+	border: 2px rgb(99,23,10);
+	border-radius: 3px;
+	letter-spacing: 0.5px;
+	padding: 0 40px;
+    font-size: 12px;
+    cursor: cell;
+	@media (max-width 540px)
+		display block
+		margin 0 auto 50px
+		padding 15px 40px
+	&:hover
+		background lighten(#DB4646, 10%)
+		border-color lighten(#DB4646, 10%)
+	&:active
+		cursor pointer
+		background darken(#DB4646, 10%)
+		border-color darken(#DB4646, 10%)
+	&:focus
+		outline none
+}

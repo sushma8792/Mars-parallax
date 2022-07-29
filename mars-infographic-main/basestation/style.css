@@ -1,0 +1,299 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Koulen', cursive;
+}
+/* //////////////////////////ROCKET TO THE TOP BUTTON//////////////////////////////////// */
+#rocket{
+  position: fixed;
+  bottom:2px;
+  font-size: 2em;
+  font-style: bold;
+  background-color: transparent;
+  right:2px;
+  z-index: 9999999;
+  cursor:cell;
+}
+/* ////////////////////////////////////////////////////////////////// */
+body{
+    background-color: black;
+    background-image: url("1_Hour_Space_Flight_Star_field.gif");
+    background-repeat: repeat;
+    min-height: 1500px;
+    overscroll-behavior:hidden;
+}
+/* STYLING THE NAV BAR */
+    
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+ 
+  z-index: 99999;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+ 
+    display: block;
+  
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    float: right;
+    
+    transition: all 0.5s ease-out;
+  }
+  
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    
+    cursor: cell;
+    text-decoration:underline;
+    
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    
+    float: left;
+    color: white;
+  }
+  
+  
+/* STYLING THE SECTION */
+section{
+    position: relative;
+    width:100%;
+    height:110vh;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    text-align: left;
+     
+}
+
+section img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(130%);
+    
+}
+
+section div{
+  position: relative;
+}
+
+
+section:before{
+    content: '';
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top ,black ,transparent);
+    z-index:1000 ;
+}
+section:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+   mix-blend-mode: screen;
+  
+}
+
+#text{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: 'Orbitron', sans-serif;
+    padding-bottom: 1.75em;
+    font-size: 6em;
+    z-index: 2;
+}
+
+#earth{
+  z-index:3;
+}
+
+#imgone{
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+#txtone{
+  z-index: 4;
+  color: #ffffff;
+  font-size: 1.5em;
+  margin-left: 2%;
+  margin-right: 70%;
+  font-family: 'Koulen', cursive;
+}
+
+#imgtwo, #imgthree{
+  object-fit: scale-down;
+  /* padding: 1px; */
+  
+}
+
+#imgfour{
+  z-index: 1000;
+}
+
+#txttwo, #txtthree{
+  z-index: 4444444444;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-family: 'Koulen', cursive;
+  margin-left: 2%;
+  margin-right: 70%;
+}
+
+#txtthree{
+  margin-right: 2%;
+  margin-left: 70%;
+}
+
+#txtfour, #txtfive, #txtsix, #txttwl, #txtthir{
+  z-index: 4;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+#txtfive{
+  margin-right: 50%;
+  margin-left: 10%;
+  margin-bottom: 40%;
+ 
+}
+
+#imgsix{
+  object-fit: scale-down;
+}
+
+#txtsix{
+  margin-bottom: 18em;
+}
+
+#txtnine{
+  font-size: 6em;
+  color:black;
+  position: absolute;
+  text-shadow: 1px 1px 2px rgb(12, 10, 10);
+}
+
+#imgtwl{
+  object-fit: scale-down;
+  padding: 10px 0px 10px 100px;
+  padding-left: 8em;
+}
+
+#txttwl{
+  font-size: 2.4em;
+  margin-right: 89%;
+  margin-left: 37%; 
+}
+
+#txtthir{
+  margin-left: 89%;
+  margin-right: 37%; 
+}
+
+.club1 img{
+  object-fit: scale-down;
+  margin-right: 20em;
+  overflow-x: hidden;
+}
+
+.story{
+  
+  display:grid;
+  grid-template-columns:  1fr  1fr 1fr;
+  align-items:center;
+  justify-content:flex-end;
+  max-width :100%;
+  height: 100vh;
+
+}
+
+.storyimg{
+  grid-column: 2/4;
+  padding:50px;
+
+  background-blend-mode: color;
+  filter: contrast(120%);
+  max-width:70%;
+  object-fit:stretch;
+  justify-content: center;
+  align-items: center;
+  z-index:1000;
+}
+.storytext{
+  grid-column: 1/2;
+  color:white;
+  font-size: large;
+  padding: 50px;
+  padding-top: 200px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#mars-rust, #gale-center, #nili, #volcano{
+  cursor: cell;
+}
+
+.storylife{
+  display:flex;
+
+}
+
+
+
+footer {
+  display:flex;
+  justify-content:space-around;
+  /* justify-content: space-evenly; */
+  height:300px;
+  text-align: center;
+  padding: 3px;
+  background-color: rgba(247, 233, 233, 0.15) ;
+ 
+  color: white;
+}
+
+footer a{
+  color:#ffff;
+}
+
+
+/*
+
+TO ADD FADE IN EFFECT ON PAGE LOAD
+ USE IT FOR OTHER PAGES 
+footer, .finaltext {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+} */
